@@ -47,7 +47,7 @@ public class Customer {
             if (each.getMovie().getPriceCode() == Movie.NEW_RELEASE) {
                 frequentRenterPoint++;
             }
-            result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(thisAmount);
+            result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(thisAmount) +"\n";
             totalAmount += thisAmount;
         }
         result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
