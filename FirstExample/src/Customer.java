@@ -26,7 +26,7 @@ public class Customer {
             double thisAmount = 0;
             Rental each = (Rental) rentals.nextElement();
 
-            thisAmount = amoutFor(each);
+            thisAmount = each.getCharge();
             // add frequent renter pointer
             frequentRenterPoint++;
             if (each.getMovie().getPriceCode() == Movie.NEW_RELEASE) {
@@ -40,7 +40,4 @@ public class Customer {
         return result;
     }
 
-    private double amoutFor(Rental rental) {
-        rental.getCharge();
-    }
 }
